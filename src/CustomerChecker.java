@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class CustomerChecker {
 
-    public void customerInfo(String filePath, String idOrName) throws IOException {
+    public String customerInfo(String filePath, String idOrName) throws IOException {
         DataList dataGetter = new DataList();
         ArrayList<String> dataList = dataGetter.get(filePath);
         LocalDate today = LocalDate.now();
@@ -26,7 +26,7 @@ public class CustomerChecker {
                     customerInfo = "Personen har aldrig varit medlem.";
         }
 
-        System.out.print(customerInfo);
+        return customerInfo;
 
     }
     public CustomerChecker() throws IOException {
