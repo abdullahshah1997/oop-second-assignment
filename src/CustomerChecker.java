@@ -17,9 +17,11 @@ public class CustomerChecker {
                     LocalDate memberDate = LocalDate.parse(dataList.get(i+1));
                     if(memberDate.isBefore(aYearAgo)||memberDate.equals(aYearAgo)){
                         customerInfo = "Personen är en före detta medlem.";
+                        break;
                     }
                     else{
                         customerInfo = "Personen är en nuvarande medlem.";
+                        break;
                     }
                 }
                 else

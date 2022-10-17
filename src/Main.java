@@ -8,6 +8,6 @@ public class Main {
         System.out.println("Skriv in namn eller personnummer för att veta status för medlemskap.");
         String input = scan.nextLine();
         CustomerChecker customerChecker = new CustomerChecker();
-        customerChecker.customerInfo("src/customers.txt",input);
+        System.out.println(customerChecker.customerInfo("src/customers.txt",input.trim()));
     }
 }
