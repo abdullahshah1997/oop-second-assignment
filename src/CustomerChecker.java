@@ -13,7 +13,7 @@ public class CustomerChecker {
         String visitorStatus = "";
         String [] informationArray = new String[2];
         String customerLog = "";
-        idOrName=idOrName.trim();
+        idOrName = idOrName.trim();
         for (int i = 0; i < dataList.size(); i++) {
             if(!dataList.get(i).contains("-"))
                 if (dataList.get(i).split(", ")[0].equals(idOrName)

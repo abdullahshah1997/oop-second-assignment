@@ -26,6 +26,7 @@ public class Main {
             outstream.print(customerData);
         }catch(IOException e)
         {
+            System.out.println("Något gick fel med filinläsningen.");
             e.printStackTrace();
         }
         }
